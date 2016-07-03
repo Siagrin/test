@@ -1,0 +1,18 @@
+quester: vielhomme
+first: bvn,wb
+NPC_options:
+    bvn:
+        text: 'Je voue salue étranger.'
+        condition: '!vieux_rencontré'
+        pointers: 'bonjour,aurevoir'
+    wb:
+        text: 'Bonjour, %player%'
+    souvenir:
+        text: 'Je m''en souviendrais, bonne journée'
+player_options:
+    bonjour:
+        text: 'Salutations, je m''apelle %player%'
+        event: 'rencontre_vieux'
+        pointers: 'souvenir'
+    aurevoir:
+        text: 'Je dois y aller'
